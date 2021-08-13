@@ -3,8 +3,11 @@
   "version": "0.1.5",
   "description": "A set of Step Functions high-level patterns.",
   "scripts": {
-    "build": "",
-    "build:watch": "jsii -w",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "watch": "tsc -w",
+    "jsii": "jsii",
+    "jiss:watch": "jsii -w",
     "package": "jsii-pacmak",
     "cdk": "cdk",
     "check": "npm test && npm run lint",
