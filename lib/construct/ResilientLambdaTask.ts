@@ -7,9 +7,11 @@ import * as tasks from '@aws-cdk/aws-stepfunctions-tasks';
 export class ResilientLambdaTask extends tasks.LambdaInvoke {
 
   public static readonly TransientErrors: string[] = [
-    "Lambda.ServiceException",
-    "Lambda.AWSLambdaException",
-    "Lambda.SdkClientException",
+    // Added by default in CDK
+    // "Lambda.ServiceException",
+    // "Lambda.AWSLambdaException",
+    // "Lambda.SdkClientException",
+    // Additional Retry condition not covered by default CDK conditions
     "Lambda.TooManyRequestsException"
   ]
 
