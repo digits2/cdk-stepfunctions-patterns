@@ -1,0 +1,1708 @@
+{
+  "author": {
+    "email": "kolomied@amazon.co.uk",
+    "name": "Dmitry Kolomiets",
+    "roles": [
+      "author"
+    ],
+    "url": "https://github.com/kolomied"
+  },
+  "bundled": {
+    "aws-sdk": "^2.709.0"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-lambda": "1.49.1",
+    "@aws-cdk/aws-stepfunctions": "1.49.1",
+    "@aws-cdk/aws-stepfunctions-tasks": "1.49.1",
+    "@aws-cdk/core": "1.49.1",
+    "constructs": "^3.0.4"
+  },
+  "dependencyClosure": {
+    "@aws-cdk/assets": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.Assets",
+          "packageId": "Amazon.CDK.Assets",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cdk-assets",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.assets"
+        },
+        "js": {
+          "npm": "@aws-cdk/assets"
+        },
+        "python": {
+          "distName": "aws-cdk.assets",
+          "module": "aws_cdk.assets"
+        }
+      }
+    },
+    "@aws-cdk/aws-apigateway": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.APIGateway",
+          "packageId": "Amazon.CDK.AWS.APIGateway",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "apigateway",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.apigateway"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-apigateway"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-apigateway",
+          "module": "aws_cdk.aws_apigateway"
+        }
+      }
+    },
+    "@aws-cdk/aws-applicationautoscaling": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.ApplicationAutoScaling",
+          "packageId": "Amazon.CDK.AWS.ApplicationAutoScaling",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "applicationautoscaling",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.applicationautoscaling"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-applicationautoscaling"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-applicationautoscaling",
+          "module": "aws_cdk.aws_applicationautoscaling"
+        }
+      }
+    },
+    "@aws-cdk/aws-autoscaling": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.AutoScaling",
+          "packageId": "Amazon.CDK.AWS.AutoScaling",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "autoscaling",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.autoscaling"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-autoscaling"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-autoscaling",
+          "module": "aws_cdk.aws_autoscaling"
+        }
+      }
+    },
+    "@aws-cdk/aws-autoscaling-common": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.AutoScaling.Common",
+          "packageId": "Amazon.CDK.AWS.AutoScaling.Common",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "autoscaling-common",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.autoscaling.common"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-autoscaling-common"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-autoscaling-common",
+          "module": "aws_cdk.aws_autoscaling_common"
+        }
+      }
+    },
+    "@aws-cdk/aws-autoscaling-hooktargets": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.AutoScaling.HookTargets",
+          "packageId": "Amazon.CDK.AWS.AutoScaling.HookTargets",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "autoscaling-hooktargets",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.autoscaling.hooktargets"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-autoscaling-hooktargets"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-autoscaling-hooktargets",
+          "module": "aws_cdk.aws_autoscaling_hooktargets"
+        }
+      }
+    },
+    "@aws-cdk/aws-batch": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.Batch",
+          "packageId": "Amazon.CDK.AWS.Batch",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "batch",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.batch"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-batch"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-batch",
+          "module": "aws_cdk.aws_batch"
+        }
+      }
+    },
+    "@aws-cdk/aws-certificatemanager": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.CertificateManager",
+          "packageId": "Amazon.CDK.AWS.CertificateManager",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "certificatemanager",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.certificatemanager"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-certificatemanager"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-certificatemanager",
+          "module": "aws_cdk.aws_certificatemanager"
+        }
+      }
+    },
+    "@aws-cdk/aws-cloudformation": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.CloudFormation",
+          "packageId": "Amazon.CDK.AWS.CloudFormation",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cloudformation",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.cloudformation"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-cloudformation"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-cloudformation",
+          "module": "aws_cdk.aws_cloudformation"
+        }
+      }
+    },
+    "@aws-cdk/aws-cloudfront": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.CloudFront",
+          "packageId": "Amazon.CDK.AWS.CloudFront",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cloudfront",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.cloudfront"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-cloudfront"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-cloudfront",
+          "module": "aws_cdk.aws_cloudfront"
+        }
+      }
+    },
+    "@aws-cdk/aws-cloudwatch": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.CloudWatch",
+          "packageId": "Amazon.CDK.AWS.CloudWatch",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cloudwatch",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.cloudwatch"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-cloudwatch"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-cloudwatch",
+          "module": "aws_cdk.aws_cloudwatch"
+        }
+      }
+    },
+    "@aws-cdk/aws-cognito": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.Cognito",
+          "packageId": "Amazon.CDK.AWS.Cognito",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cognito",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.cognito"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-cognito"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-cognito",
+          "module": "aws_cdk.aws_cognito"
+        }
+      }
+    },
+    "@aws-cdk/aws-dynamodb": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.DynamoDB",
+          "packageId": "Amazon.CDK.AWS.DynamoDB",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "dynamodb",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.dynamodb"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-dynamodb"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-dynamodb",
+          "module": "aws_cdk.aws_dynamodb"
+        }
+      }
+    },
+    "@aws-cdk/aws-ec2": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.EC2",
+          "packageId": "Amazon.CDK.AWS.EC2",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "ec2",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.ec2"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-ec2"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-ec2",
+          "module": "aws_cdk.aws_ec2"
+        }
+      }
+    },
+    "@aws-cdk/aws-ecr": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.ECR",
+          "packageId": "Amazon.CDK.AWS.ECR",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "ecr",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.ecr"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-ecr"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-ecr",
+          "module": "aws_cdk.aws_ecr"
+        }
+      }
+    },
+    "@aws-cdk/aws-ecr-assets": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.Ecr.Assets",
+          "packageId": "Amazon.CDK.ECR.Assets",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "ecr-assets",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.ecr.assets"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-ecr-assets"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-ecr-assets",
+          "module": "aws_cdk.aws_ecr_assets"
+        }
+      }
+    },
+    "@aws-cdk/aws-ecs": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.ECS",
+          "packageId": "Amazon.CDK.AWS.ECS",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "ecs",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.ecs"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-ecs"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-ecs",
+          "module": "aws_cdk.aws_ecs"
+        }
+      }
+    },
+    "@aws-cdk/aws-elasticloadbalancing": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.ElasticLoadBalancing",
+          "packageId": "Amazon.CDK.AWS.ElasticLoadBalancing",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "elasticloadbalancing",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.elasticloadbalancing"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-elasticloadbalancing"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-elasticloadbalancing",
+          "module": "aws_cdk.aws_elasticloadbalancing"
+        }
+      }
+    },
+    "@aws-cdk/aws-elasticloadbalancingv2": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.ElasticLoadBalancingV2",
+          "packageId": "Amazon.CDK.AWS.ElasticLoadBalancingV2",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "elasticloadbalancingv2",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.elasticloadbalancingv2"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-elasticloadbalancingv2"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-elasticloadbalancingv2",
+          "module": "aws_cdk.aws_elasticloadbalancingv2"
+        }
+      }
+    },
+    "@aws-cdk/aws-events": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.Events",
+          "packageId": "Amazon.CDK.AWS.Events",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "events",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.events"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-events"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-events",
+          "module": "aws_cdk.aws_events"
+        }
+      }
+    },
+    "@aws-cdk/aws-glue": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.Glue",
+          "packageId": "Amazon.CDK.AWS.Glue",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "glue",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.glue"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-glue"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-glue",
+          "module": "aws_cdk.aws_glue"
+        }
+      }
+    },
+    "@aws-cdk/aws-iam": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.IAM",
+          "packageId": "Amazon.CDK.AWS.IAM",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "iam",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.iam"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-iam"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-iam",
+          "module": "aws_cdk.aws_iam"
+        }
+      }
+    },
+    "@aws-cdk/aws-kms": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.KMS",
+          "packageId": "Amazon.CDK.AWS.KMS",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "kms",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.kms"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-kms"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-kms",
+          "module": "aws_cdk.aws_kms"
+        }
+      }
+    },
+    "@aws-cdk/aws-lambda": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.Lambda",
+          "packageId": "Amazon.CDK.AWS.Lambda",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "lambda",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.lambda"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-lambda"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-lambda",
+          "module": "aws_cdk.aws_lambda"
+        }
+      }
+    },
+    "@aws-cdk/aws-logs": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.Logs",
+          "packageId": "Amazon.CDK.AWS.Logs",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "logs",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.logs"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-logs"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-logs",
+          "module": "aws_cdk.aws_logs"
+        }
+      }
+    },
+    "@aws-cdk/aws-route53": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.Route53",
+          "packageId": "Amazon.CDK.AWS.Route53",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "route53",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.route53"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-route53"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-route53",
+          "module": "aws_cdk.aws_route53"
+        }
+      }
+    },
+    "@aws-cdk/aws-route53-targets": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.Route53.Targets",
+          "packageId": "Amazon.CDK.AWS.Route53.Targets",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "route53-targets",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.route53.targets"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-route53-targets"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-route53-targets",
+          "module": "aws_cdk.aws_route53_targets"
+        }
+      }
+    },
+    "@aws-cdk/aws-s3": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.S3",
+          "packageId": "Amazon.CDK.AWS.S3",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "s3",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.s3"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-s3"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-s3",
+          "module": "aws_cdk.aws_s3"
+        }
+      }
+    },
+    "@aws-cdk/aws-s3-assets": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.S3.Assets",
+          "packageId": "Amazon.CDK.AWS.S3.Assets",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "s3-assets",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.s3.assets"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-s3-assets"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-s3-assets",
+          "module": "aws_cdk.aws_s3_assets"
+        }
+      }
+    },
+    "@aws-cdk/aws-sam": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.SAM",
+          "packageId": "Amazon.CDK.AWS.SAM",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "sam",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.sam"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-sam"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-sam",
+          "module": "aws_cdk.aws_sam"
+        }
+      }
+    },
+    "@aws-cdk/aws-secretsmanager": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.SecretsManager",
+          "packageId": "Amazon.CDK.AWS.SecretsManager",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "secretsmanager",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.secretsmanager"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-secretsmanager"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-secretsmanager",
+          "module": "aws_cdk.aws_secretsmanager"
+        }
+      }
+    },
+    "@aws-cdk/aws-servicediscovery": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.ServiceDiscovery",
+          "packageId": "Amazon.CDK.AWS.ServiceDiscovery",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "servicediscovery",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.servicediscovery"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-servicediscovery"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-servicediscovery",
+          "module": "aws_cdk.aws_servicediscovery"
+        }
+      }
+    },
+    "@aws-cdk/aws-sns": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.SNS",
+          "packageId": "Amazon.CDK.AWS.SNS",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "sns",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.sns"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-sns"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-sns",
+          "module": "aws_cdk.aws_sns"
+        }
+      }
+    },
+    "@aws-cdk/aws-sns-subscriptions": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.SNS.Subscriptions",
+          "packageId": "Amazon.CDK.AWS.SNS.Subscriptions",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "sns-subscriptions",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.sns.subscriptions"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-sns-subscriptions"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-sns-subscriptions",
+          "module": "aws_cdk.aws_sns_subscriptions"
+        }
+      }
+    },
+    "@aws-cdk/aws-sqs": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.SQS",
+          "packageId": "Amazon.CDK.AWS.SQS",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "sqs",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.sqs"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-sqs"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-sqs",
+          "module": "aws_cdk.aws_sqs"
+        }
+      }
+    },
+    "@aws-cdk/aws-ssm": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.SSM",
+          "packageId": "Amazon.CDK.AWS.SSM",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "ssm",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.ssm"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-ssm"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-ssm",
+          "module": "aws_cdk.aws_ssm"
+        }
+      }
+    },
+    "@aws-cdk/aws-stepfunctions": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.StepFunctions",
+          "packageId": "Amazon.CDK.AWS.StepFunctions",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "stepfunctions",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.stepfunctions"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-stepfunctions"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-stepfunctions",
+          "module": "aws_cdk.aws_stepfunctions"
+        }
+      }
+    },
+    "@aws-cdk/aws-stepfunctions-tasks": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.AWS.StepFunctions.Tasks",
+          "packageId": "Amazon.CDK.AWS.StepFunctions.Tasks",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "stepfunctions-tasks",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.services.stepfunctions.tasks"
+        },
+        "js": {
+          "npm": "@aws-cdk/aws-stepfunctions-tasks"
+        },
+        "python": {
+          "distName": "aws-cdk.aws-stepfunctions-tasks",
+          "module": "aws_cdk.aws_stepfunctions_tasks"
+        }
+      }
+    },
+    "@aws-cdk/cloud-assembly-schema": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.CloudAssembly.Schema",
+          "packageId": "Amazon.CDK.CloudAssembly.Schema",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cdk-cloud-assembly-schema",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.cloudassembly.schema"
+        },
+        "js": {
+          "npm": "@aws-cdk/cloud-assembly-schema"
+        },
+        "python": {
+          "distName": "aws-cdk.cloud-assembly-schema",
+          "module": "aws_cdk.cloud_assembly_schema"
+        }
+      }
+    },
+    "@aws-cdk/core": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK",
+          "packageId": "Amazon.CDK",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "core",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.core"
+        },
+        "js": {
+          "npm": "@aws-cdk/core"
+        },
+        "python": {
+          "distName": "aws-cdk.core",
+          "module": "aws_cdk.core"
+        }
+      }
+    },
+    "@aws-cdk/custom-resources": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.CustomResources",
+          "packageId": "Amazon.CDK.AWS.CustomResources",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cdk-customresources",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.customresources"
+        },
+        "js": {
+          "npm": "@aws-cdk/custom-resources"
+        },
+        "python": {
+          "distName": "aws-cdk.custom-resources",
+          "module": "aws_cdk.custom_resources"
+        }
+      }
+    },
+    "@aws-cdk/cx-api": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.CXAPI",
+          "packageId": "Amazon.CDK.CXAPI",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cdk-cx-api",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.cxapi"
+        },
+        "js": {
+          "npm": "@aws-cdk/cx-api"
+        },
+        "python": {
+          "distName": "aws-cdk.cx-api",
+          "module": "aws_cdk.cx_api"
+        }
+      }
+    },
+    "@aws-cdk/region-info": {
+      "targets": {
+        "dotnet": {
+          "assemblyOriginatorKeyFile": "../../key.snk",
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/master/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK.RegionInfo",
+          "packageId": "Amazon.CDK.RegionInfo",
+          "signAssembly": true
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cdk-region-info",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.regioninfo"
+        },
+        "js": {
+          "npm": "@aws-cdk/region-info"
+        },
+        "python": {
+          "distName": "aws-cdk.region-info",
+          "module": "aws_cdk.region_info"
+        }
+      }
+    },
+    "constructs": {
+      "targets": {
+        "dotnet": {
+          "namespace": "Constructs",
+          "packageId": "Constructs"
+        },
+        "go": {
+          "moduleName": "github.com/aws/constructs-go"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "constructs",
+            "groupId": "software.constructs"
+          },
+          "package": "software.constructs"
+        },
+        "js": {
+          "npm": "constructs"
+        },
+        "python": {
+          "distName": "constructs",
+          "module": "constructs"
+        }
+      }
+    }
+  },
+  "description": "A set of Step Functions high-level patterns.",
+  "docs": {
+    "stability": "experimental"
+  },
+  "homepage": "https://github.com/kolomied/cdk-stepfunctions-patterns#readme",
+  "jsiiVersion": "1.32.0",
+  "keywords": [
+    "aws",
+    "cdk",
+    "stepfunctions",
+    "pattern",
+    "resiliency"
+  ],
+  "license": "MIT",
+  "metadata": {
+    "jsii": {
+      "pacmak": {
+        "hasDefaultInterfaces": true
+      }
+    }
+  },
+  "name": "cdk-stepfunctions-patterns",
+  "readme": {
+    "markdown": "# cdk-stepfunctions-patterns [![Mentioned in Awesome CDK](https://awesome.re/mentioned-badge.svg)](https://github.com/kolomied/awesome-cdk)\n![build](https://github.com/kolomied/cdk-stepfunctions-patterns/workflows/build/badge.svg)\n![jsii-publish](https://github.com/kolomied/cdk-stepfunctions-patterns/workflows/jsii-publish/badge.svg)\n![downloads](https://img.shields.io/npm/dt/cdk-stepfunctions-patterns)\n\n[![npm version](https://badge.fury.io/js/cdk-stepfunctions-patterns.svg)](https://badge.fury.io/js/cdk-stepfunctions-patterns)\n[![PyPI version](https://badge.fury.io/py/cdk-stepfunctions-patterns.svg)](https://badge.fury.io/py/cdk-stepfunctions-patterns)\n[![NuGet version](https://badge.fury.io/nu/Talnakh.StepFunctions.Patterns.svg)](https://badge.fury.io/nu/Talnakh.StepFunctions.Patterns)\n\n*cdk-stepfunctions-patterns* library is a set of [AWS CDK](https://aws.amazon.com/cdk/) constructs that provide\nresiliency patterns implementation for AWS Step Functions.\n\nAll these patterns are *composable*, meaning that you can combine them together to create\nquite complex state machines that are much easier to maintain and support than low-level\nJSON definitions.\n\n  * [Try / Catch](#try--catch-pattern)\n  * [Try / Finally](#try--finally-pattern)\n  * [Try / Catch / Finally](#try--catch--finally-pattern)\n  * [Retry with backoff and jitter](#retry-with-backoff-and-jitter)\n  * [Resilience lambda errors handling](#resilience-lambda-errors-handling)\n  * [Validation of proper resilience lambda errors handling](#validation-of-proper-resilience-lambda-errors-handling)\n\n## Try / Catch pattern\nStep Functions support **Try / Catch** pattern natively with [Task](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-task-state.html)\nand [Parallel](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-parallel-state.html) states.\n\n`TryTask` construct adds a high level abstraction that allows you to use Try / Catch pattern with any state or sequence of states.\n\n### Example\n```typescript\nimport * as sfn from '@aws-cdk/aws-stepfunctions';\nimport { TryTask } from 'cdk-stepfunctions-patterns';\n\n// ...\n\nnew sfn.StateMachine(this, 'TryCatchStepMachine', {\n  definition: new TryTask(this, \"TryCatch\", {\n    tryProcess: new sfn.Pass(this, 'A1').next(new sfn.Pass(this, 'B1')),\n    catchProcess: new sfn.Pass(this, 'catchHandler'),\n    // optional configuration properties\n    catchProps: {\n      errors: ['Lambda.AWSLambdaException'],\n      resultPath: \"$.ErrorDetails\"\n    }\n  })\n})\n```\n\n### Resulting StepFunction\n![](doc/tryCatch.png)\n\n\n## Try / Finally pattern\nIt is often useful to design state machine using **Try / Finally** pattern. The idea is to have a *Final* state that has to be\nexecuted regardless of successful or failed execution of the *Try* state. There may be some temporal resource you want\nto delete or notification to send.\n\nStep Functions do not provide a native way to implement that pattern but it can be done using\n[Parallel](https://docs.aws.amazon.com/step-functions/latest/dg/amazon-states-language-parallel-state.html) state and *catch all* catch\nspecification.\n\n`TryTask` construct abstracts these implementation details and allows to express the pattern directly.\n\n### Example\n\n```typescript\nimport * as sfn from '@aws-cdk/aws-stepfunctions';\nimport { TryTask } from 'cdk-stepfunctions-patterns';\n\n// ...\n\nnew sfn.StateMachine(this, 'TryFinallyStepMachine', {\n    definition: new TryTask(this, \"TryFinally\", {\n        tryProcess: new sfn.Pass(this, 'A2').next(new sfn.Pass(this, 'B2')),\n        finallyProcess: new sfn.Pass(this, 'finallyHandler'),\n        // optional configuration properties\n        finallyErrorPath: \"$.FinallyErrorDetails\"\n    })\n})\n```\n\n### Resulting StepFunction\n![](doc/tryFinally.png)\n\n## Try / Catch / Finally pattern\nThis is a combination of two previous patterns. `TryTask` construct allows you to express rather complex\nerror handling logic in a very compact form.\n\n### Example\n```typescript\nimport * as sfn from '@aws-cdk/aws-stepfunctions';\nimport { TryTask } from 'cdk-stepfunctions-patterns';\n\n// ...\n\nnew sfn.StateMachine(this, 'TryCatchFinallyStepMachine', {\n    definition: new TryTask(this, \"TryCatchFinalli\", {\n        tryProcess: new sfn.Pass(this, 'A3').next(new sfn.Pass(this, 'B3')),\n        catchProcess: new sfn.Pass(this, 'catchHandler3'),\n        finallyProcess: new sfn.Pass(this, 'finallyHandler3')\n    })\n})\n```\n\n### Resulting StepFunction\n![](doc/tryCatchFinally.png)\n\n## Retry with backoff and jitter\nOut of the box Step Functions retry implementation provides a way to configure backoff factor,\nbut there is no built in way to introduce jitter. As covered in\n[Exponential Backoff And Jitter](https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/)\nand [Wait and Retry with Jittered Back-off](https://github.com/Polly-Contrib/Polly.Contrib.WaitAndRetry#wait-and-retry-with-jittered-back-off) this retry technique can be very helpful in high-load\nscenarios.\n\n`RetryWithJitterTask` construct provides a custom implementation of retry with backoff and\njitter that you can use directly in your state machines.\n\n### Example\n```typescript\nimport * as sfn from '@aws-cdk/aws-stepfunctions';\nimport { RetryWithJitterTask } from 'cdk-stepfunctions-patterns';\n\n// ...\n\nnew sfn.StateMachine(this, 'RetryWithJitterStepMachine', {\n    definition: new RetryWithJitterTask(this, \"AWithJitter\", {\n        tryProcess: new sfn.Pass(this, 'A4').next(new sfn.Pass(this, 'B4')),\n        retryProps: { errors: [\"States.ALL\"], maxAttempts: 3 }\n    })\n})\n```\n\n### Resulting StepFunction\n![](doc/retryWithJitter.png)\n\n## Resilience lambda errors handling\n`LambdaInvoke` construct from [aws-stepfunctions-tasks](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-stepfunctions-tasks-readme.html)\nmodule is probably one of the most used ones. Still, handling of\n[AWS Lambda service exceptions](https://docs.aws.amazon.com/step-functions/latest/dg/bp-lambda-serviceexception.html)\nis often overlooked.\n\n`ResilientLambdaTask` is a drop-in replacement construct for `LambdaInvoke` that adds retry for the most common\ntransient errors:\n\n - Lambda.ServiceException\n - Lambda.AWSLambdaException\n - Lambda.SdkClientException\n - Lambda.TooManyRequestsException\n\n ### Example\n```typescript\nimport * as lambda from '@aws-cdk/aws-lambda';\nimport { ResilientLambdaTask } from 'cdk-stepfunctions-patterns';\n\n// ...\n\nconst lambdaFunction = new lambda.Function(this, 'LambdaFunction', {\n    // ... removed for clarity\n});\n\nconst calculateJitterTask = new ResilientLambdaTask(this, \"InvokeLambda\", {\n    lambdaFunction: lambdaFunction\n})\n```\n\nThat would result in the following state definition:\n\n```json\n\"InvokeLambda\": {\n    \"Type\": \"Task\",\n    \"Resource\": \"arn:aws:states:::lambda:invoke\",\n    \"Parameters\": {\n        \"FunctionName\": \"<ARN of lambda function>\"\n    },\n    \"Retry\": [{\n        \"ErrorEquals\": [\n        \"Lambda.ServiceException\",\n        \"Lambda.AWSLambdaException\",\n        \"Lambda.SdkClientException\",\n        \"Lambda.TooManyRequestsException\"\n        ],\n        \"IntervalSeconds\": 2,\n        \"MaxAttempts\": 6,\n        \"BackoffRate\": 2\n    }]\n}\n```\n\n## Validation of proper resilience lambda errors handling\nIt is often a challenge to enforce consistent transient error handling across all state machines of a large\napplication. To help with that, *cdk-stepfuctions-patterns* provides a [CDK aspect](https://docs.aws.amazon.com/cdk/latest/guide/aspects.html)\nto verify that all Lambda invocations correctly handle transient errors from AWS Lambda service.\n\nUse `ResilienceLambdaChecker` aspect as shown below.\n\n ### Example\n```typescript\nimport * as cdk from '@aws-cdk/core';\nimport { ResilienceLambdaChecker } from 'cdk-stepfunctions-patterns'\n\nconst app = new cdk.App();\n// ...\n\n// validate compliance rules\napp.node.applyAspect(new ResilienceLambdaChecker());\n```\n\nIf there are some states in your application that do not retry transient errors or miss some recommended\nerror codes, there will be warning during CDK synthesize stage:\n\n```\nPS C:\\Dev\\GitHub\\cdk-stepfunctions-patterns> cdk synth --strict\n[Warning at /StepFunctionsPatterns/A] No retry for AWS Lambda transient errors defined - consider using ResilientLambdaTask construct.\n[Warning at /StepFunctionsPatterns/B] Missing retry for transient errors: Lambda.AWSLambdaException,Lambda.SdkClientException.\n```\n"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kolomied/cdk-stepfunctions-patterns.git"
+  },
+  "schema": "jsii/0.10.0",
+  "targets": {
+    "dotnet": {
+      "namespace": "Talnakh.StepFunctions.Patterns",
+      "packageId": "Talnakh.StepFunctions.Patterns"
+    },
+    "java": {
+      "maven": {
+        "artifactId": "SqlServerSeeder.Patterns",
+        "groupId": "xyz.talnakh"
+      },
+      "package": "xyz.talnakh.stepfunctions.patterns"
+    },
+    "js": {
+      "npm": "cdk-stepfunctions-patterns"
+    },
+    "python": {
+      "distName": "cdk-stepfunctions-patterns",
+      "module": "Talnakh.StepFunctions.Patterns"
+    }
+  },
+  "types": {
+    "cdk-stepfunctions-patterns.ResilienceLambdaChecker": {
+      "assembly": "cdk-stepfunctions-patterns",
+      "docs": {
+        "stability": "experimental",
+        "summary": "Define an aspect that validates all Lambda Invoke tasks and warns if AWS Lambda transient errors are not handled properly."
+      },
+      "fqn": "cdk-stepfunctions-patterns.ResilienceLambdaChecker",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "locationInModule": {
+          "filename": "lib\\aspect\\ResilienceLambdaChecker.ts",
+          "line": 20
+        },
+        "parameters": [
+          {
+            "name": "props",
+            "optional": true,
+            "type": {
+              "fqn": "cdk-stepfunctions-patterns.ResilienceLambdaCheckerProps"
+            }
+          }
+        ]
+      },
+      "interfaces": [
+        "@aws-cdk/core.IAspect"
+      ],
+      "kind": "class",
+      "locationInModule": {
+        "filename": "lib\\aspect\\ResilienceLambdaChecker.ts",
+        "line": 16
+      },
+      "methods": [
+        {
+          "docs": {
+            "stability": "experimental",
+            "summary": "All aspects can visit an IConstruct."
+          },
+          "locationInModule": {
+            "filename": "lib\\aspect\\ResilienceLambdaChecker.ts",
+            "line": 24
+          },
+          "name": "visit",
+          "overrides": "@aws-cdk/core.IAspect",
+          "parameters": [
+            {
+              "name": "construct",
+              "type": {
+                "fqn": "@aws-cdk/core.IConstruct"
+              }
+            }
+          ]
+        }
+      ],
+      "name": "ResilienceLambdaChecker"
+    },
+    "cdk-stepfunctions-patterns.ResilienceLambdaCheckerProps": {
+      "assembly": "cdk-stepfunctions-patterns",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental",
+        "summary": "Properties for defining resilience lambda checker aspect."
+      },
+      "fqn": "cdk-stepfunctions-patterns.ResilienceLambdaCheckerProps",
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "lib\\aspect\\ResilienceLambdaChecker.ts",
+        "line": 9
+      },
+      "name": "ResilienceLambdaCheckerProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib\\aspect\\ResilienceLambdaChecker.ts",
+            "line": 10
+          },
+          "name": "fail",
+          "optional": true,
+          "type": {
+            "primitive": "boolean"
+          }
+        }
+      ]
+    },
+    "cdk-stepfunctions-patterns.ResilientLambdaTask": {
+      "assembly": "cdk-stepfunctions-patterns",
+      "base": "@aws-cdk/aws-stepfunctions-tasks.LambdaInvoke",
+      "docs": {
+        "stability": "experimental",
+        "summary": "Define a Lambda Invoke task with transient errors handling implemented."
+      },
+      "fqn": "cdk-stepfunctions-patterns.ResilientLambdaTask",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "locationInModule": {
+          "filename": "lib\\construct\\ResilientLambdaTask.ts",
+          "line": 16
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "@aws-cdk/core.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "type": {
+              "fqn": "@aws-cdk/aws-stepfunctions-tasks.LambdaInvokeProps"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "lib\\construct\\ResilientLambdaTask.ts",
+        "line": 7
+      },
+      "methods": [
+        {
+          "docs": {
+            "stability": "experimental",
+            "summary": "Adds retry for transient Lambda errors."
+          },
+          "locationInModule": {
+            "filename": "lib\\construct\\ResilientLambdaTask.ts",
+            "line": 25
+          },
+          "name": "addDefaultRetry",
+          "parameters": [
+            {
+              "docs": {
+                "summary": "Lambda tast to modify."
+              },
+              "name": "task",
+              "type": {
+                "fqn": "@aws-cdk/aws-stepfunctions-tasks.LambdaInvoke"
+              }
+            }
+          ],
+          "static": true
+        }
+      ],
+      "name": "ResilientLambdaTask",
+      "properties": [
+        {
+          "const": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib\\construct\\ResilientLambdaTask.ts",
+            "line": 9
+          },
+          "name": "TransientErrors",
+          "static": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "primitive": "string"
+              },
+              "kind": "array"
+            }
+          }
+        }
+      ]
+    },
+    "cdk-stepfunctions-patterns.RetryWithJitterProps": {
+      "assembly": "cdk-stepfunctions-patterns",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental",
+        "summary": "Properties for defining a retry with backoff and jitter construct."
+      },
+      "fqn": "cdk-stepfunctions-patterns.RetryWithJitterProps",
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "lib\\construct\\RetryWithJitterTask.ts",
+        "line": 9
+      },
+      "name": "RetryWithJitterProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental",
+            "summary": "Retry configuration."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib\\construct\\RetryWithJitterTask.ts",
+            "line": 43
+          },
+          "name": "retryProps",
+          "type": {
+            "fqn": "@aws-cdk/aws-stepfunctions.RetryProps"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental",
+            "summary": "Try chain to execute."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib\\construct\\RetryWithJitterTask.ts",
+            "line": 38
+          },
+          "name": "tryProcess",
+          "type": {
+            "fqn": "@aws-cdk/aws-stepfunctions.IChainable"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "No comment",
+            "stability": "experimental",
+            "summary": "An optional description for this state."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib\\construct\\RetryWithJitterTask.ts",
+            "line": 15
+          },
+          "name": "comment",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "$",
+            "remarks": "May also be the special value DISCARD, which will cause the effective\ninput to be the empty object {}.",
+            "stability": "experimental",
+            "summary": "JSONPath expression to select part of the state to be the input to this state."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib\\construct\\RetryWithJitterTask.ts",
+            "line": 24
+          },
+          "name": "inputPath",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "$",
+            "remarks": "May also be the special value DISCARD, which will cause the state's\ninput to become its output.",
+            "stability": "experimental",
+            "summary": "JSONPath expression to indicate where to inject the state's output."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib\\construct\\RetryWithJitterTask.ts",
+            "line": 33
+          },
+          "name": "resultPath",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ]
+    },
+    "cdk-stepfunctions-patterns.RetryWithJitterTask": {
+      "assembly": "cdk-stepfunctions-patterns",
+      "base": "@aws-cdk/aws-stepfunctions.Parallel",
+      "docs": {
+        "stability": "experimental",
+        "summary": "Define a construct that implements retry with backoff and jitter."
+      },
+      "fqn": "cdk-stepfunctions-patterns.RetryWithJitterTask",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "locationInModule": {
+          "filename": "lib\\construct\\RetryWithJitterTask.ts",
+          "line": 51
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "@aws-cdk/core.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "type": {
+              "fqn": "cdk-stepfunctions-patterns.RetryWithJitterProps"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "lib\\construct\\RetryWithJitterTask.ts",
+        "line": 49
+      },
+      "name": "RetryWithJitterTask"
+    },
+    "cdk-stepfunctions-patterns.TryProps": {
+      "assembly": "cdk-stepfunctions-patterns",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental",
+        "summary": "Properties for defining a try/catch/finally construct."
+      },
+      "fqn": "cdk-stepfunctions-patterns.TryProps",
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "lib\\construct\\TryTask.ts",
+        "line": 7
+      },
+      "name": "TryProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental",
+            "summary": "Try chain to execute."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib\\construct\\TryTask.ts",
+            "line": 36
+          },
+          "name": "tryProcess",
+          "type": {
+            "fqn": "@aws-cdk/aws-stepfunctions.IChainable"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental",
+            "summary": "Optional catch chain to execute."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib\\construct\\TryTask.ts",
+            "line": 46
+          },
+          "name": "catchProcess",
+          "optional": true,
+          "type": {
+            "fqn": "@aws-cdk/aws-stepfunctions.IChainable"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental",
+            "summary": "Catch properties."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib\\construct\\TryTask.ts",
+            "line": 41
+          },
+          "name": "catchProps",
+          "optional": true,
+          "type": {
+            "fqn": "@aws-cdk/aws-stepfunctions.CatchProps"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "No comment",
+            "stability": "experimental",
+            "summary": "An optional description for this state."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib\\construct\\TryTask.ts",
+            "line": 13
+          },
+          "name": "comment",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental",
+            "summary": "JSONPath expression to indicate where to map caught exception details."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib\\construct\\TryTask.ts",
+            "line": 51
+          },
+          "name": "finallyErrorPath",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental",
+            "summary": "Optional finally chain to execute."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib\\construct\\TryTask.ts",
+            "line": 56
+          },
+          "name": "finallyProcess",
+          "optional": true,
+          "type": {
+            "fqn": "@aws-cdk/aws-stepfunctions.IChainable"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "$",
+            "remarks": "May also be the special value DISCARD, which will cause the effective\ninput to be the empty object {}.",
+            "stability": "experimental",
+            "summary": "JSONPath expression to select part of the state to be the input to this state."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib\\construct\\TryTask.ts",
+            "line": 22
+          },
+          "name": "inputPath",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "default": "$",
+            "remarks": "May also be the special value DISCARD, which will cause the state's\ninput to become its output.",
+            "stability": "experimental",
+            "summary": "JSONPath expression to indicate where to inject the state's output."
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "lib\\construct\\TryTask.ts",
+            "line": 31
+          },
+          "name": "resultPath",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ]
+    },
+    "cdk-stepfunctions-patterns.TryTask": {
+      "assembly": "cdk-stepfunctions-patterns",
+      "base": "@aws-cdk/aws-stepfunctions.Parallel",
+      "docs": {
+        "stability": "experimental",
+        "summary": "Define a construct that helps with handling StepFunctions exceptions."
+      },
+      "fqn": "cdk-stepfunctions-patterns.TryTask",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "locationInModule": {
+          "filename": "lib\\construct\\TryTask.ts",
+          "line": 64
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "@aws-cdk/core.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "type": {
+              "fqn": "cdk-stepfunctions-patterns.TryProps"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "lib\\construct\\TryTask.ts",
+        "line": 62
+      },
+      "name": "TryTask"
+    }
+  },
+  "version": "0.1.5",
+  "fingerprint": "INgGWTyZwgAIaoD32gJtK1/tcC/pTOrtkYkWplGo9QI="
+}
