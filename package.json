@@ -3,7 +3,7 @@
   "version": "0.1.5",
   "description": "A set of Step Functions high-level patterns.",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc  -b --verbose",
     "build:watch": "tsc -w",
     "watch": "tsc -w",
     "jsii": "jsii",
