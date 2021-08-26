@@ -3,7 +3,7 @@
   "version": "0.1.5",
   "description": "A set of Step Functions high-level patterns.",
   "scripts": {
-    "build": "tsc --build --force --verbose",
+    "build": "heft build --clean",
     "build:verbose": "tsc --build --verbose",
     "build:watch": "tsc -w",
     "watch": "tsc -w",
@@ -84,7 +84,7 @@
     "@typescript-eslint/eslint-plugin": "~4.29.3",
     "@typescript-eslint/parser": "~4.29.3",
     "aws-cdk": "1.116.0",
-    "eslint": "~7.32.0",
+    "eslint": "7.29.0",
     "jest": "25.4.0",
     "jsii": "^1.8.0",
     "jsii-pacmak": "^1.8.0",
