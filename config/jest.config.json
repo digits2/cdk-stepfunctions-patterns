@@ -1,0 +1,23 @@
+{
+  // https://jestjs.io/docs/configuration
+  "extends": "@rushstack/heft-jest-plugin/includes/jest-shared.config.json",
+  "verbose": true,
+  "collectCoverage": true,
+  "coverageThreshold": {
+    "global": {
+      "branches": 50,
+      "functions": 50,
+      "lines": 50,
+      "statements": 50
+    }
+  },
+  "rootDir": ".",
+  "roots": ["<rootDir>/src"],
+  "modulePaths": ["<rootDir>", "src"],
+  "moduleDirectories": ["node_modules", "src"],
+  "testMatch": ["**/*.test.ts"],
+  // "transform": {
+  //   "^.+\\.tsx?$': 'ts-jest"
+  // }
+  "testPathIgnorePatterns": ["/e2e/"]
+}

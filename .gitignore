@@ -18,3 +18,7 @@ lib/resources/
 .rush/temp/
 
 tsconfig.tsbuildinfo
+
+.heft/build-cache/heft-jest-data.json
+
+.heft/build-cache/jest-cache/haste-map-26779a74764f54aa18d5f6decfcbf14d-d0d628b7defb07b245e1fe96393f850a-389c2e42fb42972865453c0c02a385b6
