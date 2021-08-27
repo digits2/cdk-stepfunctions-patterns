@@ -95,7 +95,7 @@
     "minimist": ">=1.2.5",
     "prettier": "~2.3.2",
     "ts-jest": "25.4.0",
-    "typescript": "3.9.10"
+    "typescript": "4.3.5"
   },
   "bundledDependencies": [
     "aws-sdk"
