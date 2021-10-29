@@ -12,7 +12,8 @@ export namespace DockerImageTask {
    *   * `handler`, `runtime` are excluded;
    *   * other properties are optional.
    */
-  export type FunctionProps = Partial<lambda.DockerImageFunctionProps> &
+  export type FunctionProps = Partial<lambda.FunctionProps> &
+    Partial<Omit<lambda.DockerImageFunctionProps, 'code'>> &
     Partial<Omit<lambda.DockerImageFunctionProps, 'runtime'>> &
     Partial<Omit<lambda.DockerImageFunctionProps, 'memorySize'>>;
 
@@ -28,7 +29,7 @@ export namespace DockerImageTask {
     /**
      * the lambda code
     */
-    // dockerImageCode: lambda.DockerImageCode;
+    // code: lambda.DockerImageCode;
   }
 }
 
