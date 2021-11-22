@@ -2,6 +2,7 @@ import * as lambda from '@aws-cdk/aws-lambda';
 import * as sfn from '@aws-cdk/aws-stepfunctions';
 import * as cdk from '@aws-cdk/core';
 import { DockerImageTask } from './DockerImageTask';
+import { ResilientLambdaTask } from './ResilientLambdaTask';
 
 
 export namespace LoopDockerImageTask {
@@ -52,8 +53,12 @@ export namespace LoopDockerImageTask {
 export class LoopDockerImageTask extends sfn.StateMachineFragment {
   public readonly startState: sfn.State;
   public readonly endStates: sfn.INextable[];
-  private readonly deploy: DockerImageTask;
-  private readonly verify: DockerImageTask;
+  public executionLambda: DockerImageTask;
+  public verificationLambda: DockerImageTask;
+
+  public executionTask: ResilientLambdaTask;
+
+  public verifyTask: ResilientLambdaTask;
 
   constructor(scope: cdk.Construct, id: string, props: LoopDockerImageTask.Props) {
     super(scope, id);
@@ -69,7 +74,7 @@ export class LoopDockerImageTask extends sfn.StateMachineFragment {
 
     const statusPath = `${verifyPath}.${verifyStatusField}`;
 
-    this.deploy = new DockerImageTask(this, `Exec`, {
+    this.executionLambda = new DockerImageTask(this, `Execution Lambda`, {
       resultPath: 'DISCARD',
       functionPayload,
       functionProps: {
@@ -78,13 +83,22 @@ export class LoopDockerImageTask extends sfn.StateMachineFragment {
       },
     });
 
-    this.verify = new DockerImageTask(this, `Verify`, {
+    this.executionTask = new ResilientLambdaTask(this, 'Execution Task', {
+      lambdaFunction: this.executionLambda.lambdaFunction
+    });
+
+    this.verificationLambda = new DockerImageTask(this, `Verification Lambda`, {
       resultPath: verifyPath,
       functionPayload,
       functionProps: {
         code: verifyStepCode,
         ...functionProps,
       },
+    });
+
+
+    this.verifyTask = new ResilientLambdaTask(this, 'Verification Task', {
+      lambdaFunction: this.verificationLambda.lambdaFunction
     });
 
     const wait = new sfn.Wait(this, `Wait`, {
@@ -95,9 +109,9 @@ export class LoopDockerImageTask extends sfn.StateMachineFragment {
 
     const fail = new sfn.Fail(this, `Failure`);
 
-    sfn.Chain.start(this.deploy)
+    sfn.Chain.start(this.executionTask)
       .next(wait)
-      .next(this.verify)
+      .next(this.verifyTask)
       .next(
         new sfn.Choice(this, `Choice`)
           .when(sfn.Condition.stringEquals(statusPath, 'SUCCESS'), pass)
@@ -107,13 +121,13 @@ export class LoopDockerImageTask extends sfn.StateMachineFragment {
       );
 
     // Not sure why but we cannot use chain.startState and chain.endStates here.
-    this.startState = this.deploy.startState;
+    this.startState = this.executionTask.startState;
     this.endStates = [pass];
   }
 
-  addCatch(handler: sfn.IChainable, props?: sfn.CatchProps): this {
-    this.deploy.addCatch(handler, props);
-    this.verify.addCatch(handler, props);
-    return this;
-  }
+  // addCatch(handler: sfn.IChainable, props?: sfn.CatchProps): this {
+  //   this.executionTask.addCatch(handler, props);
+  //   this.verifyTask.addCatch(handler, props);
+  //   return this;
+  // }
 }
