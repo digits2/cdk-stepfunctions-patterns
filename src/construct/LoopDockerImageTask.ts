@@ -125,9 +125,9 @@ export class LoopDockerImageTask extends sfn.StateMachineFragment {
     this.endStates = [pass];
   }
 
-  // addCatch(handler: sfn.IChainable, props?: sfn.CatchProps): this {
-  //   this.executionTask.addCatch(handler, props);
-  //   this.verifyTask.addCatch(handler, props);
-  //   return this;
-  // }
+  addCatch(handler: sfn.IChainable, props?: sfn.CatchProps): this {
+    this.executionTask.addCatch(handler, props);
+    this.verifyTask.addCatch(handler, props);
+    return this;
+  }
 }

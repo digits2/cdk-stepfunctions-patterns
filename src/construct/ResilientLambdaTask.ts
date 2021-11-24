@@ -1,5 +1,5 @@
-import * as cdk from '@aws-cdk/core';
 import * as tasks from '@aws-cdk/aws-stepfunctions-tasks';
+import * as cdk from '@aws-cdk/core';
 
 /**
  * Define a Lambda Invoke task with transient errors handling implemented.
