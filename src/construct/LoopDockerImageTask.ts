@@ -68,8 +68,8 @@ export class LoopDockerImageTask extends sfn.StateMachineFragment {
       waitSeconds = 10,
       executeStepCode,
       verifyStepCode,
-      verifyPath = '$.verify',
-      verifyStatusField = 'status',
+      verifyPath = '$.VerifyResult',
+      verifyStatusField = 'Status',
     } = props;
 
     const statusPath = `${verifyPath}.${verifyStatusField}`;
@@ -105,17 +105,17 @@ export class LoopDockerImageTask extends sfn.StateMachineFragment {
       time: sfn.WaitTime.duration(cdk.Duration.seconds(waitSeconds)),
     });
 
-    const pass = new sfn.Pass(this, `Success`);
+    const pass = new sfn.Pass(this, `Succeeded`);
 
-    const fail = new sfn.Fail(this, `Failure`);
+    const fail = new sfn.Fail(this, `Failed`);
 
     sfn.Chain.start(this.executionTask)
       .next(wait)
       .next(this.verifyTask)
       .next(
         new sfn.Choice(this, `Choice`)
-          .when(sfn.Condition.stringEquals(statusPath, 'SUCCESS'), pass)
-          .when(sfn.Condition.stringEquals(statusPath, 'FAILURE'), fail)
+          .when(sfn.Condition.stringEquals(statusPath, 'SUCCEEDED'), pass)
+          .when(sfn.Condition.stringEquals(statusPath, 'FAILED'), fail)
           .otherwise(wait)
           .afterwards(),
       );
