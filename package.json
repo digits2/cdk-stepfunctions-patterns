@@ -73,6 +73,7 @@
     "@aws-cdk/aws-lambda": "1.125.0",
     "@aws-cdk/aws-stepfunctions": "1.125.0",
     "@aws-cdk/aws-stepfunctions-tasks": "1.125.0",
+    "@aws-cdk/assets": "1.125.0",
     "@aws-cdk/core": "1.125.0",
     "aws-sdk": "~2.1006.0",
     "constructs": "~3.3.206"
